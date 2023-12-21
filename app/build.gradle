@@ -1,7 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 34
+    ndkVersion "25.2.9519653"
+    namespace "com.reinhard.wechat.voicecodec"
+
     defaultConfig {
         applicationId "com.reinhard.wechat.voicecodec"
         minSdkVersion 18
@@ -38,7 +41,7 @@ dependencies {
 
     // 动态权限请求库 [googlesamples/easypermissions](https://github.com/googlesamples/easypermissions)
     implementation 'pub.devrel:easypermissions:2.0.1'
-    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'com.android.support.constraint:constraint-layout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
