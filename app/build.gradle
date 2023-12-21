@@ -11,7 +11,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         externalNativeBuild {
             cmake {
                 cppFlags "-frtti -fexceptions"
@@ -40,9 +40,9 @@ dependencies {
     }
 
     // 动态权限请求库 [googlesamples/easypermissions](https://github.com/googlesamples/easypermissions)
-    implementation 'pub.devrel:easypermissions:2.0.1'
-    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
 }
